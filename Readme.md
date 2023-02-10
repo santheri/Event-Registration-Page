@@ -5,4 +5,5 @@
 The admin login can be accessed by the route '/admin' and login credentials are already provided for admin login
 
 Username : Admin_user
+
 Password : Admin@123
