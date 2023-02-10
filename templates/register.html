@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Page</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    
+
+  <form action="/register" method="post" id="event-registration-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <p>Select the events you would like to attend:</p>
+    <input type="checkbox" id="event-1" name="event1" value="Event 1">
+    <label for="event-1">Event 1</label>
+    
+    <input type="checkbox" id="event-2" name="event2" value="Event 2">
+    <label for="event-2">Event 2</label>
+    
+    <input type="checkbox" id="event-3" name="event3" value="Event 3">
+    <label for="event-3">Event 3</label>
+  
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+</html>

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrations</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="static/css/style.css">
 
 </head>  
 <body>
@@ -18,23 +18,17 @@
           <th>Name</th>
           <th>Email</th>
           <th>Phone Number</th>
-          <th>Event Name</th>
-          <th>Number of Tickets</th>
+          <th>Events Registered</th>
+          
         </tr>
-        <tr>
-          <td>John Doe</td>
-          <td>john.doe@email.com</td>
-          <td>1234567890</td>
-          <td>Event 1</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td>Jane Doe</td>
-          <td>jane.doe@email.com</td>
-          <td>0987654321</td>
-          <td>Event 2</td>
-          <td>1</td>
-        </tr>
+        {%for participant in data%}
+        <td>{{participant.Name}}</td>
+        <td>{{participant.Email}}</td>
+        <td>{{participant.Phone_no}}</td>
+        <td>{{participant.Events}}</td>
+          
+       {%endfor%}
+        
       </table>
       
 </div>

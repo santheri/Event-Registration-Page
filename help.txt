@@ -1,0 +1,9 @@
+1. How to create a virtual environment.
+    - py -m venv env
+
+2.How to activate.
+    - env/scripts/activate
+       
+3.Git ignore file.
+    -.gitignore file will avoid the given file or folder given in .gitignore
+
